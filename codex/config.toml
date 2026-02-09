@@ -1,0 +1,24 @@
+# Permissive CTF config.
+# Use only in disposable containers.
+
+model = "gpt-5.2"
+model_reasoning_effort = "high"
+model_personality = "pragmatic"
+
+sandbox_mode = "workspace-write"
+approval_policy = "never"
+web_search = "live"
+
+[sandbox_workspace_write]
+network_access = true
+
+[projects."/workspace"]
+trust_level = "trusted"
+
+[projects."/home/kali"]
+trust_level = "trusted"
+
+[mcp_servers.burp]
+command = "/usr/lib/jvm/java-21-openjdk/bin/java"
+args = ["-jar", "/home/kali/BurpSuitePro/mcp-proxy.jar", "--sse-url", "http://127.0.0.1:9876"]
+
