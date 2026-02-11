@@ -10,6 +10,7 @@ set -euo pipefail
 
 npm install -g @openai/codex
 ln -s /opt/my-resources/setup/.codex /root/
+pip install mcp-proxy
 
 useradd -m -G root kali
 ln -s /opt/my-resources/setup/BurpSuitePro /home/kali/

@@ -245,7 +245,7 @@ tmux send-keys -t "$TMUX_SESSION:recon.1" 'tree -h /workspace/results; grep -RH 
 # window: main ops
 tmux new-window -t "$TMUX_SESSION"
 sleep 1
-tmux split-window -h -l 72 -t "$TMUX_SESSION:2.0"
+tmux split-window -h -l 78 -t "$TMUX_SESSION:2.0"
 sleep 1
 tmux split-window -v -l 6 -t "$TMUX_SESSION:2.0"
 sleep 1

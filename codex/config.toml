@@ -22,3 +22,7 @@ trust_level = "trusted"
 command = "/usr/lib/jvm/java-21-openjdk/bin/java"
 args = ["-jar", "/home/kali/BurpSuitePro/mcp-proxy.jar", "--sse-url", "http://127.0.0.1:9876"]
 
+[mcp_servers.reva]
+command = "python3"
+args = ["-m", "mcp_proxy", "--transport", "streamablehttp", "http://127.0.0.1:8089/mcp/message"]
+

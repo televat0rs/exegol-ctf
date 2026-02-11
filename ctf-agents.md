@@ -6,6 +6,7 @@ Provide guidance to help me solve the latest Hack The Box challenge machine.
 ## Local playbooks
 - Exegol container reference (tools/paths/services): `/root/.codex/skills/exegol-environment/SKILL.md`
 - Web/Burp workflow (MCP-driven triage + verification): `/root/.codex/skills/burp-mcp/SKILL.md`
+- Reverse engineering workflow (ReVa/Ghidra MCP): `/root/.codex/skills/ghidra-mcp/SKILL.md`
 
 ## Targeting context
 - Challenge slug: `CHALLENGE_SLUG`

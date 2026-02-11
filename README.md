@@ -27,7 +27,7 @@ CTF Scaffolding for Cultists.
 - `codex/config.toml`
   - shared Codex runtime config baseline
 - `codex/skills/`
-  - bundled Codex skills (`exegol-environment`, `burp-mcp`, system skills)
+  - bundled Codex skills (`exegol-environment`, `burp-mcp`, `ghidra-mcp`)
 
 ## One-Time Host Setup
 
@@ -83,11 +83,12 @@ Host updates during reset/pivot:
 
 - `exegol-environment`: Exegol paths, tools, inventories, services
 - `burp-mcp`: Burp MCP triage/index/verify workflow
+- `ghidra-mcp`: ReVa/Ghidra MCP workflow for CTF reversing (triage -> deep analysis -> rev/crypto/pwn tracks)
 
 ## `start-ctf.sh` Overrides
 
 - `BASE_DIR` (default: `/home/kali/Necronomicon/ctf`)
-- `DEFAULT_VPN` (default: `${BASE_DIR}/htb_s9.ovpn`)
+- `DEFAULT_VPN` (default: `${BASE_DIR}/htb_s10.ovpn`)
 - `LIN_TEMPLATE` (default: `${SCRIPT_DIR}/ctf.lin.md`)
 - `WIN_TEMPLATE` (default: `${SCRIPT_DIR}/ctf.win.md`)
 - `AGENTS_TEMPLATE` (default: `${SCRIPT_DIR}/ctf-agents.md`)
